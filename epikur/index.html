@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ein Fest bei Epikur · Glücksgarten</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../board.css"></head>
+<body>
+<div class="app">
+
+  <header>
+    <div class="brand">
+      <small>AUF DER SUCHE NACH DEM GLÜCK</small>
+      <strong>Ein Fest bei Epikur</strong>
+    </div>
+    <nav id="chapters" aria-label="Kapitel"></nav>
+    <div class="tools">
+      <button id="profileBtn">Steckbrief</button>
+      <button id="sound" aria-pressed="true">Ton an</button>
+      <button id="read">Vorlesen</button>
+      <button id="full">Vollbild</button>
+      <button id="teach">Lehrkraft</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="world" aria-label="Epikurs Garten">
+      <div class="location">EPIKURS GARTEN <span>Ein Fest. Viele Wünsche.</span></div>
+      <div id="hud" aria-label="Spielstand"></div>
+
+      <img id="epikur" src="assets/epikur.webp" alt="Epikur">
+      <img id="guest" alt="" hidden>
+      <div id="table" hidden>
+        <img src="assets/tisch.webp" alt="Tisch für unser Fest">
+        <div id="onTable"></div>
+      </div>
+
+      <div id="stage"></div>
+      <div id="needs" hidden></div>
+      <div id="bubble" aria-live="polite"></div>
+      <div id="sceneAction"></div>
+      <div id="toast" role="status"></div>
+      <div id="fx" aria-hidden="true"></div>
+      <div id="tagline"></div>
+    </section>
+
+    <aside id="panel" aria-live="polite"></aside>
+  </main>
+
+  <footer>
+    <button id="back">← Zurück</button>
+    <span id="progress"></span>
+    <div>
+      <button id="pause">Gesprächspause</button>
+      <button id="reset">Neu beginnen</button>
+    </div>
+  </footer>
+</div>
+
+<dialog id="pauseDialog">
+  <small>ZEIT ZUM DENKEN</small>
+  <h1>Was denkt ihr?</h1>
+  <p>Erst still überlegen. Dann mit dem Nachbarkind sprechen. Anschließend hören wir verschiedene Gründe.</p>
+  <div class="scaffold">Ich denke …, weil …<br>Ich sehe das anders, weil …<br>Meine Meinung hat sich verändert, weil …</div>
+  <div class="timer">
+    <span>Sanduhr:</span>
+    <button data-sec="30">30 Sek.</button>
+    <button data-sec="60">1 Min.</button>
+    <button data-sec="120">2 Min.</button>
+    <b id="timerText"></b>
+    <div class="timerbar"><i id="timerFill"></i></div>
+  </div>
+  <button class="primary" id="resume">Zurück in den Garten</button>
+</dialog>
+
+<dialog id="profileDialog">
+  <small>STECKBRIEF</small>
+  <h1>Epikur</h1>
+  <dl class="profile">
+    <dt>Gelebt</dt><dd>341 bis 270 vor Christus – vor über 2300 Jahren</dd>
+    <dt>Heimat</dt><dd>die griechische Insel Samos. Später zog er nach Athen.</dd>
+    <dt>Eigene Schule</dt><dd>„der Garten“ in Athen. Auch Frauen und Sklaven durften dort mitlernen – damals sehr ungewöhnlich.</dd>
+    <dt>So lebte er</dt><dd>einfach und mit Freunden zusammen: meist Brot und Wasser, an Festtagen ein Stück Käse.</dd>
+    <dt>Bücher</dt><dd>Er schrieb etwa 300 Bücher. Erhalten sind vor allem einige Briefe und Merksätze.</dd>
+    <dt>Idee vom Glück</dt><dd>Glücklich ist, wer keinen Schmerz und keine Angst hat. Dazu prüft man seine Wünsche: Was brauche ich wirklich? Freundschaft ist das Wichtigste.</dd>
+  </dl>
+  <button class="primary" id="closeProfile">Schließen</button>
+</dialog>
+
+<dialog id="teacherDialog">
+  <h1>Für dein Gespräch am Board</h1>
+
+  <p><b>Am Board:</b> Plant zwei Abschnitte mit je etwa 20–30 Minuten ein, abhängig von den Gesprächen. Abschnitt 1: Vermutung, Reisende, Markt und Wunschgründe. Abschnitt 2: Gast, Folgenwaage, vier Wunschkarten und Rückblick. Kapitel sind direkt anwählbar. Der Spielstand bleibt nur solange die Seite geöffnet ist.</p>
+  <p><b>Kennenlernen und Feigen:</b> Am Anfang steht „Wahr oder erfunden?“ mit vier Behauptungen über Epikur; der Steckbrief ist oben jederzeit erreichbar. Für jeden untersuchten Gedanken gibt es eine Feige (sieben insgesamt) – nie für eine Meinung, und keine ist versteckt.</p>
+  <p><b>Keine Glückspunkte:</b> Es gibt keinen Seelenruhe-Score und keine Rangtitel. Münzen zeigen nur das Einkaufsbudget. Mehrere Versorgungsvarianten sind möglich; teuer bedeutet nicht automatisch unnötig. Gespräche sind eine eigene Handlung, keine Ware.</p>
+  <p><b>Wunsch und Grund:</b> Die drei großen Karten zeigen beides vor der Zuordnung. Vergleicht eure Begründung danach mit Epikurs Einordnung. Bei offenen Urteilen gibt es keine Punkte.</p>
+  <p><b>Waage:</b> Die Folgen sind mögliche Gesprächsanlässe. Ihre Anzahl bestimmt keine Neigung. Die Klasse stellt ihr begründetes Urteil selbst ein und darf die Frage offen lassen. Beim Wasserholen sind Hilfe, Sicherheit und Alternativen ausdrücklich zu besprechen.</p>
+  <p><b>Fachlicher Kern:</b> natürlich und notwendig · natürlich, aber nicht notwendig · weder natürlich noch notwendig. Die Kurzbezeichnungen sind didaktische Hilfen. Freundschaft ist bei Epikur besonders wichtig; ihre Einordnung bei den notwendigen Wünschen ist hier eine vereinfachende Deutung. Zusätzlicher Genuss ist nicht verboten.</p>
+  <p><b>Sortieren:</b> Vier Kernkarten einschließlich des Jackenpaars; acht Karten als freiwillige Vertiefung am Ende. Rückmeldungen beziehen sich auf die dargestellte Einteilung, nicht auf den Wert einer Person oder ihrer Meinung.</p>
+  <p><b>Gespräch:</b> Erst allein nachdenken, dann austauschen und begründen. Die Sanduhr ist optional. Unsere Gedanken sind am Ende vollständig zugänglich; es gibt keine versteckte Erkenntnis.</p>
+  <p>Epikurs Aussagen sind vereinfachte sinngemäße Darstellungen, keine historischen Zitate. Die Bilder sind freie Interpretationen.</p>
+  <button class="primary" id="closeTeacher">Zurück</button>
+</dialog>
+
+<script src="app.js"></script>
+<script src="../board.js"></script></body>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Auf der Suche nach dem Glück</title>
+<meta name="description" content="Epikur, Aristoteles und Epiktet begegnen: ein gemeinsames Lernspiel für philosophische Gespräche am Board.">
+<link rel="stylesheet" href="portal.css">
+</head>
+<body>
+<header class="top">
+  <div><small>ETHIK · KLASSE 4</small><strong>Auf der Suche nach dem Glück</strong></div>
+  <div class="controls"><button id="home" hidden>← Alle Philosophen</button><button id="full">Vollbild</button></div>
+</header>
+
+<main id="homePage">
+  <section class="intro">
+    <small>DREI STATIONEN UND EIN FINALE</small>
+    <h1>Was macht ein Leben glücklich?</h1>
+    <p>Drei Philosophen haben darüber nachgedacht – jeder mit einer anderen Idee. Besucht sie, sammelt ihre Gedanken und findet heraus, was ihr selbst denkt.</p>
+  </section>
+
+  <section class="cards" aria-label="Stationen auswählen">
+    <button class="card" data-open="epikur">
+      <div class="art epikur"><img src="epikur/assets/epikur.webp" alt="Epikur"></div>
+      <div class="copy"><small>WÜNSCHE UND ZUFRIEDENHEIT</small><h2>Epikur</h2>
+        <p>Was brauchen wir wirklich?<br>Bereitet ein Fest vor und prüft eure Wünsche.</p>
+        <span class="status" data-status="epikur">Sammelt 7 Feigen</span>
+        <span class="enter">Den Garten besuchen →</span></div>
+    </button>
+    <button class="card" data-open="aristoteles">
+      <div class="art aristoteles"><img src="aristoteles/assets/aristoteles.webp" alt="Aristoteles"></div>
+      <div class="copy"><small>GUT HANDELN UND ÜBEN</small><h2>Aristoteles</h2>
+        <p>Was ist ein gelungenes Leben?<br>Steigt auf die Wozu-Leiter und sucht die gute Mitte.</p>
+        <span class="status" data-status="aristoteles">Sammelt 6 Schwalben</span>
+        <span class="enter">Auf den Wandelweg gehen →</span></div>
+    </button>
+    <button class="card" data-open="epiktet">
+      <div class="art epiktet"><img src="epiktet/assets/epiktet.webp" alt="Epiktet"></div>
+      <div class="copy"><small>UMGANG MIT ÄRGER UND PECH</small><h2>Epiktet</h2>
+        <p>Was liegt in unserer Hand?<br>Beobachtet das Gedanken-Wetter.</p>
+        <span class="status" data-status="epiktet">Sammelt 6 Lampen</span>
+        <span class="enter">In den Lehrhof gehen →</span></div>
+    </button>
+  </section>
+
+  <section class="timeline" aria-label="Zeitstrahl">
+    <small>WANN HABEN SIE GELEBT?</small>
+    <div class="line">
+      <span><b>Aristoteles</b>384–322 vor Christus</span>
+      <span><b>Epikur</b>341–270 vor Christus</span>
+      <i>etwa 400 Jahre später</i>
+      <span><b>Epiktet</b>um 50–135 nach Christus</span>
+      <i>fast 1900 Jahre später</i>
+      <span class="now"><b>Ihr</b>heute</span>
+    </div>
+  </section>
+
+  <button class="finale" data-open="finale">
+    <div><small>ZUM ABSCHLUSS</small><h2>Das große Glücks-Finale</h2>
+      <p>Wer bin ich? · Wessen Idee ist das? · Drei Ratschläge · Glücks-Kompass · Urkunde</p></div>
+    <div class="go"><span class="status" data-status="finale">Am besten nach allen drei Stationen</span><span class="enter">Finale starten →</span></div>
+  </button>
+  <p class="hint">Gemeinsam am Board · nachdenken, ausprobieren, begründen · Hinweise für Lehrkräfte stehen in jeder Station unter „Lehrkraft“</p>
+</main>
+
+<section id="modulePage" hidden aria-label="Station"><div id="frames"></div></section>
+<script src="portal.js"></script>
+</body>
+</html>

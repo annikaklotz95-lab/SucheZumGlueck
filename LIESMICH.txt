@@ -1,0 +1,37 @@
+Auf der Suche nach dem Glueck - Lernspiel fuer das Board (Ethik, Klasse 4)
+
+STARTEN
+1. Ordner vollstaendig entpacken und zusammen lassen.
+2. index.html im Hauptordner oeffnen (Chrome, Edge, Firefox oder Safari).
+3. Eine Station oder das Finale waehlen. "Alle Philosophen" fuehrt zurueck.
+
+AUFBAU
+- Epikur (Ordner epikur): Ein Fest vorbereiten, Wuensche pruefen. 7 Feigen.
+- Aristoteles (Ordner aristoteles): Wozu-Leiter, drei Gluecks-Kandidaten,
+  Mitte-Messer mit drei Alltagsfaellen, Schwalben-Woche. 6 Schwalben.
+- Epiktet (Ordner epiktet): Lampen-Geschichte, Gedanken-Wetter und
+  Hand-Pruefung an drei Alltagsfaellen, Meisterrunde. 6 Lampen.
+- Finale (Ordner finale): Wer bin ich? / Wessen Idee ist das? /
+  Drei Ratschlaege / Gluecks-Kompass / Urkunde zum Drucken.
+Jede Station beginnt mit "Wahr oder erfunden?" ueber den Philosophen und hat
+oben einen Steckbrief. Zeitbedarf: je Station 2-3 Abschnitte von 20-30 Minuten,
+Finale 20-25 Minuten.
+
+GRUNDSAETZE
+- Sammelstuecke (Feigen, Schwalben, Lampen) gibt es fuer untersuchte Gedanken,
+  nie fuer Meinungen. Keines ist versteckt.
+- Sterne gibt es nur im Finale, fuer Wissens- und Zuordnungsfragen.
+- Kein Gluecks- oder Tugend-Punktestand. Der Gluecks-Kompass bleibt ohne Wertung.
+- "Zurueck" macht jeden Schritt rueckgaengig. Kapitel sind oben direkt waehlbar.
+
+TEXTE ANPASSEN
+In jeder Station steht am Anfang der app.js ein Teil "Inhalte" mit allen Texten,
+Faellen und Karten. spiel.js und spiel.css enthalten die gemeinsame Technik fuer
+Aristoteles, Epiktet und das Finale; board.js und board.css gehoeren zu Epikur.
+
+HINWEISE
+- Der Fortschritt auf der Startseite gilt, solange die Seite geoeffnet ist.
+  Nichts wird gespeichert oder versendet.
+- Aussagen der Philosophen sind vereinfachte, sinngemaesse Darstellungen.
+  Die fachlichen Entscheidungen stehen in jeder Station unter "Lehrkraft".
+- Fuer GitHub Pages den gesamten Inhalt dieses Ordners hochladen.

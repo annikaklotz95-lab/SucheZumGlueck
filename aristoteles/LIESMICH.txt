@@ -1,0 +1,8 @@
+Ein guter Tag mit Aristoteles - Station des Lernspiels "Auf der Suche nach dem Glueck"
+
+Am besten ueber die index.html im Hauptordner starten. Die Station braucht
+die Dateien spiel.js und spiel.css aus dem Hauptordner.
+
+Ablauf: Kennenlernen (Wahr oder erfunden?) - Wozu-Leiter und drei Kandidaten -
+drei Alltagsfaelle am Mitte-Messer - Schwalben-Woche - Rueckblick zum Drucken.
+Texte, Faelle und Karten stehen am Anfang von app.js im Teil "Inhalte".

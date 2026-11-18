@@ -1,0 +1,10 @@
+Ein Fest bei Epikur – überarbeitete Boardfassung
+
+ZIP vollständig entpacken, dann index.html öffnen. Alle Dateien und assets im selben Ordner behalten. Keine Installation notwendig. Für Hosting (z. B. GitHub Pages) den gesamten Ordnerinhalt hochladen.
+
+Neu: Wunsch und Grund vor der Einordnung; drei große Einzelkarten; 15 Münzen, mehrere Versorgungswege; Gespräche als Handlung; kein Seelenruhe-Score, keine Rangtitel; offene Folgenwaage mit eigenem Urteil und Hilfe-Alternative; vier Kernkarten, acht als Vertiefung; neutraler Vorher-Nachher-Rückblick.
+
+Die Sanduhr ist freiwillig. Vorlesen nutzt die Browser-Sprachausgabe. Fortschritt bleibt nur bis zum Neuladen der Seite erhalten.
+
+Neu: Am Anfang steht "Wahr oder erfunden?" ueber Epikur, oben gibt es einen
+Steckbrief, und fuer jeden untersuchten Gedanken wird sichtbar eine Feige gesammelt.
